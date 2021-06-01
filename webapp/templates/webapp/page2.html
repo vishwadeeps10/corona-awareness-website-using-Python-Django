@@ -1,0 +1,230 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} Dos and don'ts  {% endblock %}</title>
+
+    <style>
+        h1{
+    font-size: 35px;
+    font-family: sans-serif;
+    background-color:#D2B4DE ;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.mainblock{
+    display:flex;
+
+}
+.page2h2{
+    font-size: 50px;
+}
+.block1{
+    border: 2px solid black; 
+    height:auto;
+    width:49%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    margin-bottom:5px;
+    
+    color:green;
+    text-align: center;
+}   
+.block2{
+    border: 2px solid black;
+    height:745px;
+    width:49%;
+    
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    margin-bottom:5px;
+    color:darkred;
+    text-align: center;                       
+}
+.page2ol li{
+    font-size: 25px;
+    text-align:justify ;
+    padding: 5px;
+    margin:20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.block2dont{
+    border: 2px solid black;
+    height:1145px;
+    width:50%;
+    
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    margin-bottom:5px;
+    color:darkred;
+    text-align: center;
+    }
+
+    @media screen and (max-width: 700px){
+        h1{
+            font-size: 20px;
+
+        }
+        .mainblock{
+            display: inline-block;
+        }
+        .page2h2{
+            font-size: 30px;
+        }
+        .block1{
+            height: auto;
+            width:auto;
+            padding-bottom: 5px;
+            padding-top: 10px;
+           
+        }
+        .page2ol li{
+            font-size: 15px;
+            
+        }
+        .block2{
+            height: auto;
+            width:auto;
+            padding-bottom: 5px;
+            padding-top: 10px;
+            
+        }
+        .block2dont{
+            height: auto;
+            width:auto;
+            padding-bottom: 5px;
+            padding-top: 10px;
+           
+        }   
+    }
+
+    </style>
+
+</head>
+<body>
+<h1>Follow these Do's and Don'ts:</h1>
+<main>
+    <div class="mainblock">
+        <div class="block1">
+            <h2 class="page2h2">DOs</h2>
+            <ol class="page2ol">
+                <li>Practice frequent hand washing.
+                    Wash hands with soap
+                    and water or use alcohol
+                    based hand rub. Wash hands
+                    even if they are visibly clean.</li>
+                    <li>Cover your nose and
+                        mouth with
+                        handkerchief/tissue while
+                        sneezing and coughing.</li>
+                    <li>Throw used
+                        tissues into closed
+                        bins immediately
+                        after use.</li>
+                    <li>See a doctor if you feel unwell
+                        (fever, difficult breathing and
+                        cough). While visiting doctor
+                        wear a mask/cloth to cover
+                        your mouth and nose.</li>
+                    <li>If you have these
+                        signs/symptoms please
+                        call State helpline number
+                        or Ministry of Health &
+                        Family Welfare’s 24X7
+                        helpline at 011-23978046.</li>
+                    <li>Avoid participating
+                        in large gatherings.</li>
+            </ol>
+        </div>
+        <div class="block2">
+            <h2 class="page2h2">Don'ts</h2>
+            <ol class="page2ol">
+                <li>Have a close contact
+                    with anyone, if you’re
+                    experiencing cough
+                    and fever.</li>
+                <li>Touch your eyes,
+                    nose and mouth.</li>
+                <li>Spit in public.</li>
+            </ol>
+
+        </div>
+    </div>
+    <h1>Do's and Don'ts for Vaccination:</h1>
+    <div >
+    <div class="mainblock">
+        <div class="block1">
+            <h2 class="page2h2">DOs</h2>
+            <ul  class="page2ol">
+            <li>Register and schedule your vaccination in
+                advance.</li>
+            <li>Register online through Co-WIN OR Aarogya
+                Setu OR UMANG platform.</li>
+            <li>Register against only one phone number and
+                one proof of ID.</li>
+            <li>Carry ID proof when you go for vaccination</li>
+            <li>Carry as ID proof the same ID document used
+                for registration.</li>
+            <li>Search for nearest vaccination centre online
+                from Co-WIN OR Aarogya Setu or Umang and
+                select centre convenient for vaccination</li>
+            <li>To receive Health ID as part of registration for
+                vaccination, give your consent.</li>
+            <li>Reach Vaccination Centre on the specified
+                date and time.</li>
+            <li>Wait for 30 minutes at the vaccination centre
+                after vaccination.</li>
+            <li>Inform vaccination centre if any side effect(s)
+                is experienced within 30 minutes.</li>
+            <li>Inform Helpline Number: +91-11-23978046
+                (Toll free- 1075) in case of any side effect after
+                leaving vaccination centre.</li>
+            <li>Continue precautions of social distancing and
+                wearing masks.</li>
+        </ul></div>
+        <div class="block2dont">
+            <h2 class="page2h2">Don'ts</h2>  
+            <ul class="page2ol">
+                <li>Walk-in without appointment.</li>
+                <li>One-person register in
+                    multiple platforms.</li>
+                <li>One-person register using
+                    multiple phone number and
+                    multiple ID proof.</li>
+                <li>Consume alcohol or other
+                    intoxicants on the day of
+                    vaccination.</li>
+                <li>Panic in case of side effects.</li>
+                <li>Register again for second
+                    dose.</li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
+{% endblock %}
+

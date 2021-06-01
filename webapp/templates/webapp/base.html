@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %} | Co-Sweep</title>
+    <link rel="icon" href="https://i.imgur.com/cfz6ZbE.png" type="image/icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+   
+
+      .contact-info li{
+            color:red;
+            display:inline-block;
+            padding:9px;
+            margin-left:70px;
+            font-weight: bold;
+           
+ 
+        }
+        .contact-info{
+          text-align:center;
+          margin-bottom: 0px;
+  
+        }
+        @media screen and (max-width: 700px){
+          .contact-info li{
+            display: block;
+            font-size: 13px;
+            padding:3px;
+            margin:auto;
+          }
+          .footer{
+            font-size: 12px;
+          }
+          
+        }
+
+    </style>
+    <body >
+    
+      <!--Navbar-->
+      <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-image:linear-gradient(45deg, rgb(3, 107, 160), rgb(34, 148, 159)) " >
+          <a class="navbar-brand" style=" color:white ; 
+          font-family: Georgia, 'Times New Roman', Times, serif; 
+          font-size:30px;
+          font-weight: bold;" href="/">Co-Sweep</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active mr-sm-3"><button class="btn btn-outline-primary " type="submit" style="border-color: black; border-radius:15px; font-family:serif;" ><a href="https://www.who.int"  style="color:white;"  target="_blank" rel="noopener noreferrer"> Go to WHO</a></button></li>
+              
+              <li class="nav-item active"><button class="btn btn-outline-primary " style="border-color: black; border-radius:15px; font-family:serif;" type="submit"><a href="https://www.mohfw.gov.in"  style="color:white   ;" target="_blank" rel="noopener noreferrer"> Go to Health Ministry of India</a></button></li>
+            </ul>  
+          </div>
+        </nav>
+      </div>
+    
+      <!--end navbar-->
+       <!--contact information start-->
+       <div style="background-color:#ffed75;border-radius: 10px;margin: 3px; border-color: black;">
+        <ul class="contact-info">
+        <li class="contact-li">Helpline Number :+91-11-23978046 (24X7)</li>
+        <li class="contact-li">Toll Free : 1075</li>
+        <li class="contact-li">Helpline Email ID : ncov2019@gov.in</li>
+      </ul>
+      </div>
+  <!--contact information end-->
+  {% block content %} {% endblock %}
+   <!--Footer copyright start-->
+<div class="bg-dark text-white p-2" >
+  <div class="container">
+    <footer class="blog-footer mx-auto " >
+      <p class="footer" style="text-align:center;">&copy;Copyright 2021 All Rights Reserved </p>
+      <p ><center class="footer">
+        Disclaimer: This website is build for project purpose in the guidance of
+        <a href="https://www.trubainstitute.ac.in/" target="_blank" style="color:yellow;">Truba College of Science and Technology </a>,Bhopal</p></center>
+       
+    </footer>
+  </div>
+</div>
+<!--Footer copyright end-->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>  

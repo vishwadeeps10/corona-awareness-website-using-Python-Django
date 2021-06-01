@@ -1,0 +1,72 @@
+{% extends "./base.html" %}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h4, initial-scale=1.0">
+    <title>{% block title %} Error {% endblock %}</title>
+<style>
+    .div-error{
+        height: 500px;
+        width: 550px;
+        border: 2px solid black;
+        margin:10px auto;
+        border-radius: 10px;
+    }
+    .div-error div{
+        margin-top: 10%;
+    }
+    .Eroor{
+        font-size: 100px;
+        text-align: center;
+        color: red;
+    }
+    .Eroor2{
+        font-size: 40px;
+        text-align: center;
+        color: red;
+    }
+    .Eroor3{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+@media screen and (max-width: 700px){
+    .div-error{
+        height: 5auto;
+        width: auto;
+        margin:2%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    
+</style>
+</head>
+<body>
+    <div class="div-error">
+        <div >
+            <p class="Eroor">404</p>
+            <p class="Eroor2" >Page Not Found !</p>
+            <p class="Eroor3">The page you are looking for doesnot exist or an another error occuried.</p>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

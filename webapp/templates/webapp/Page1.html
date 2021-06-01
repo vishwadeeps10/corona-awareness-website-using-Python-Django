@@ -1,0 +1,202 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>{% block title %} Vaccination {% endblock %}</title>
+<style>
+.vaccine-no{
+    color:black;
+    background-image:linear-gradient(rgb(154, 230, 156) 0%, rgb(156, 233, 153) 5%, rgb(156, 234, 158) 6%, rgb(156, 234, 158) 6%, rgb(160, 233, 154) 10%, rgb(163, 235, 149) 24%, rgb(173, 238, 146) 36%, rgb(173, 238, 144) 40%, rgb(179, 239, 143) 45%, rgb(176, 240, 143) 46%, rgb(180, 241, 138) 50%, rgb(183, 241, 141) 51%, rgb(182, 240, 138) 53%, rgb(186, 241, 139) 58%, rgb(196, 247, 128) 77%, rgb(201, 246, 129) 86%, rgb(204, 250, 126) 90%, rgb(203, 247, 124) 94%, rgb(207, 248, 126) 96%, rgb(207, 248, 126) 100%) ;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 4px;
+    font-style: italic;
+    border-color: black;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 45px; 
+    margin: 10px;
+    padding: 10px; 
+    background-color: #8D0AA1;
+    color: white;
+}
+
+
+
+/* serving media file*/
+@media screen and (max-width: 700px){
+
+   .vaccine-no{
+       font-size: 20px;
+       margin: 1%;
+   }
+   .note{
+       font-size: 16px;
+   }
+   .front-photo{
+        padding:2%;
+        box-sizing: border-box;
+    }
+    .title{
+        font-size: 20px;
+    }
+    li{
+        font-size: 15px;
+        margin:5px;
+        padding:5px    }
+    ul{
+        margin-left:1%;
+        margin-right: 5%;
+    }
+    .feature{
+        font-size: 18px;
+        font-weight: bold;
+    }
+   img{
+       height: auto;
+       width: 100%;
+   }
+   .img-resp{
+       display: none;
+   }
+
+
+    
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+<!--vaccination count info-->
+<div class="vaccine-no">
+  <P><b>Total Vaccination in India : 21,60,46,638</b><br></P>
+  <p style="text-align: right;font-size: 13px;">Last update: 01-Jun-2021 8:04 AM</p>
+      
+</div>
+<hr>
+<h4 style="color: red; padding:8px;text-align: center;" class="note">NOTE : All infromation  and individuals have been gathered from internet and Health Ministry of India. </h4>
+<hr>
+<img src="https://i.imgur.com/VQgrCmd.jpg" alt="photo" width="100%" height="auto" style="border-color: black; padding-top:3px; border-radius: 10px;"  class="front-photo">
+
+<!--vaccine registration info-->
+<h1 class="title" ><b><u>Citizen Registration and Appointment for Vaccination:</u></b> </h1>
+<img src="https://i.imgur.com/S9AtlAe.jpg" alt="photo" width="1530" height="350">
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px; ">
+  <p class="feature" >The following features will be available for the Citizen in Self Registration module:</p>
+  <ul>
+    <li>Register for a vaccination session (with a choice of registering additional 3 members)</li>
+    <li>Selection of Vaccination center of convenience based on the vaccine name</li>
+    <li>Schedule vaccination as per slot availability at a Center</li>
+    <li>Cancel/Reschedule Vaccination</li>
+  </ul>
+</div>
+<img src="https://i.imgur.com/0we7Bst.jpg" alt="photo" width="1530" height="700" >
+<img src="https://i.imgur.com/gfW4BHP.jpg" alt="photo" width="1530" height="70" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+<ul>
+  <li>User can go to the url <a href="http://www.cowin.gov.in" target="_blank">www.cowin.gov.in</a> and click on “Register/Sign In yourself” tab.</li>
+</ul>
+</div>
+<img src="https://i.imgur.com/vtJsmUz.jpg" alt="photo" width="1430" height="400" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Enter valid mobile number. Click on “Get OTP” button.</li>
+    <li>OTP is sent at the phone number via SMS.</li>
+    <li>Enter the OTP within 180 seconds and click on “Verify” button.</li>
+    <li>Once the OTP is validated, the “Register for Vaccination” page appears</li>
+    <li>Enter details required in page</li>
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/hYWcXEZ.jpg" alt="photo" width="1150" height="900" style="margin-left: 140px;" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Once the details are entered for registration, Click “Register” Button at the bottom right.</li>
+    <li>Receives Confirmation message on successful registration.</li>
+
+  </ul>
+</div>
+<img src="https://i.imgur.com/RkdyMCQ.jpg" alt="number3-pic" width="1530" height="70" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Once registration is completed; the system will show the “Account Details”</li>
+    <li>Citizen can further add 3 more people linked with this mobile number by clicking on “Add
+      More” button at the bottom right side of the Page</li>
+    <li>Enter all the details of the individual to be included and then click on the
+      Add button</li>
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/ThFgQ9Z.jpg" alt="add-more pic" width="1050" height="700" style="margin-left:250px;" >
+<img src="https://i.imgur.com/20ikYHT.jpg" alt="number3-pic" width="1530" height="70">
+
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Citizen can Delete individuals linked with his mobile number</li>
+    <li><ol>
+      <li>Login with username and password, and Navigate to the dashboard.</li>
+      <li>Click “ ” action button to Delete a member</li>
+    </ol></li>
+    <li>Confirmation message will appear on Deletion.</li>
+  </ul>
+  <img class="img-resp" src="https://i.imgur.com/37k5fhK.jpg" alt="add-more pic" width="1050" height="700" style="margin-left:250px;" >
+</div>
+<img src="https://i.imgur.com/TelettY.jpg" alt="number4-pic" width="1530" height="70">
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Citizen can schedule Appointment from the “Account Details” page.</li>
+
+  </ul>
+</div>
+
+<img class="img-resp" src="https://i.imgur.com/gtdSZie.jpg" alt="slotbookpic" width="900" height="600" style="margin-left:350px;" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Click on “Schedule” button for Booking Vaccination Appointment.</li>
+    <li>System navigates to “Book Appointment for Vaccination” page</li>
+    <li>Search the Vaccination Centre of choice by District or Pin code.</li>
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/SA6KasU.jpg" alt="slotbookpic" width="900" height="600" style="margin-left:350px;" >
+<img class="img-resp" src="https://i.imgur.com/4a0ThBu.jpg" alt="slotbookpic" width="1400" height="500" style="margin-left:80px;" >
+<div class="img-resp" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>On clicking “Search” button, system will display below the list of Vaccination centre as per
+      Search Criteria and based on State’s Age policy</li>
+    <li>Centre Names available nearby as per state/district or pincode entered will be displayed</li>
+    <li>On clicking any centre at the panel, the available slots (date and capacity) will be displayed</li>
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/mOQAqy5.jpg" alt="slotbookpic" width="1250" height="900" style="margin-left:90px;" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Once “Book” button is clicked, the “Appointment Confirmation” page is displayed</li>
+    <li>Click “Confirm” button after verifying the details for final confirmation on booking</li>
+    
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/bJyX70F.jpg" alt="slotbookpic" width="1050" height="600" style="margin-left:150px;" >
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 25px;  margin-left: 15px;">
+  <ul>
+    <li>Once confirmed, the confirmation page with “Appointment Successful” message will be
+      displayed.</li>
+
+    
+  </ul>
+</div>
+<img class="img-resp" src="https://i.imgur.com/TsDymL4.jpg" alt="slotbookpic" width="1050" height="500" style="margin-left:150px;" >
+<br>
+</body>
+</html>
+
+{% endblock %}
